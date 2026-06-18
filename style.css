@@ -1,0 +1,536 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    overflow-x:hidden;
+}
+
+/* LOGIN */
+
+.login-page{
+
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=2070&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+
+    width:420px;
+
+    background:rgba(255,255,255,0.1);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    color:white;
+}
+
+.login-box h1{
+
+    font-size:45px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.login-box p{
+
+    color:#d1d5db;
+
+    margin-bottom:30px;
+}
+
+.form-control{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+}
+
+.btn-login{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.btn-login:hover{
+
+    background:#15803d;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:none;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+    width:320px;
+
+    height:100vh;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    background:#0f172a;
+
+    padding:30px 20px;
+
+    color:white;
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:60px;
+}
+
+.logo i{
+
+    font-size:50px;
+
+    color:#22c55e;
+}
+
+.logo h2{
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+/* MENU */
+
+.menu-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:none;
+
+    color:#cbd5e1;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:15px;
+
+    font-size:20px;
+
+    transition:0.3s;
+
+    cursor:pointer;
+}
+
+.menu-btn:hover{
+
+    background:#22c55e;
+
+    color:white;
+
+    transform:translateX(5px);
+}
+
+/* CONTENT */
+
+.content{
+
+    margin-left:320px;
+
+    padding:30px;
+}
+
+/* TOPBAR */
+
+.topbar{
+
+    background:white;
+
+    padding:25px 30px;
+
+    border-radius:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.profile{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+}
+
+/* PAGE */
+
+.page{
+    display:none;
+}
+
+.active-page{
+    display:block;
+}
+
+/* CARD */
+
+.card-box{
+
+    padding:35px;
+
+    border-radius:30px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    height:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-box i{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+}
+
+.card-box h1{
+
+    font-size:65px;
+
+    font-weight:700;
+}
+
+.card-box p{
+
+    font-size:18px;
+}
+
+.green{
+    background:linear-gradient(135deg,#22c55e,#15803d);
+}
+
+.blue{
+    background:linear-gradient(135deg,#3b82f6,#1d4ed8);
+}
+
+.orange{
+    background:linear-gradient(135deg,#f97316,#ea580c);
+}
+
+/* TABLE */
+
+.table-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:30px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+
+overflow-x:auto;
+
+}
+
+/* BUTTON */
+
+.btn{
+    border-radius:12px;
+}
+
+/* CANVAS */
+
+canvas{
+
+    background:white;
+
+    border:3px dashed #cbd5e1;
+
+    border-radius:20px;
+}
+
+/* SIGNATURE */
+
+#hasilSignature img{
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    border:3px solid #22c55e;
+
+    padding:10px;
+
+    background:white;
+}
+
+/* MODAL */
+
+.modal-content{
+
+    border:none;
+
+    border-radius:30px;
+}
+/* ===== STYLE TABLE MODERN ===== */
+
+.table-box{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.table-title{
+    margin-bottom:25px;
+}
+
+.table-title h2{
+    font-weight:700;
+    color:#1e293b;
+    margin-bottom:5px;
+}
+
+.table-title p{
+    color:#64748b;
+    margin:0;
+}
+
+.btn-add{
+    background:#0284c7;
+    color:white;
+    border:none;
+    padding:15px 28px;
+    border-radius:18px;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(2,132,199,.3);
+}
+
+.btn-add:hover{
+    background:#0369a1;
+    color:white;
+}
+
+.dataTables_wrapper .dt-buttons .dt-button{
+    background:#e0f2fe !important;
+    border:none !important;
+    color:#0369a1 !important;
+    border-radius:12px !important;
+    padding:10px 20px !important;
+    margin-right:10px;
+}
+
+#myTable{
+
+width:100% !important;
+
+table-layout:auto;
+
+margin-top:20px !important;
+
+}
+
+.table-box{
+
+overflow-x:auto;
+
+}
+
+.dataTables_wrapper{
+
+overflow-x:auto;
+
+}
+
+#myTable td,
+#myTable th{
+
+white-space:nowrap;
+
+vertical-align:middle;
+
+}
+
+.aksi-group{
+
+display:flex;
+
+gap:8px;
+
+justify-content:center;
+
+}
+
+.badge-file{
+
+display:inline-block;
+
+max-width:220px;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+white-space:nowrap;
+
+}
+
+#myTable thead{
+    background:#eef6fa;
+}
+
+#myTable thead th{
+    color:#0f4c6e;
+    font-weight:700;
+    border-bottom:none;
+}
+
+#myTable tbody tr{
+    height:65px;
+}
+
+#myTable tbody td{
+    vertical-align:middle;
+}
+
+.badge-file{
+    background:#f1f5f9;
+    color:#475569;
+    padding:10px 15px;
+    border-radius:12px;
+}
+
+.aksi-group .btn{
+    border-radius:15px;
+    padding:8px 18px;
+    font-weight:600;
+}
+
+.btn-detail{
+    color:#0284c7;
+    background:white;
+    border:1px solid #e2e8f0;
+}
+
+.btn-edit{
+    color:#d97706;
+    background:white;
+    border:1px solid #e2e8f0;
+}
+
+.btn-hapus{
+    color:#dc2626;
+    background:white;
+    border:1px solid #e2e8f0;
+}
+#myTable{
+
+width:100%;
+
+}
+
+#myTable td,
+#myTable th{
+
+white-space:nowrap;
+
+}
+
+.badge-file{
+
+max-width:180px;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+}
